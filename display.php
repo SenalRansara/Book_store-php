@@ -1,5 +1,8 @@
 <?php
 include 'connect.php';
+    $curPageName = substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+1);  
+    echo "The current page Server IP : ".$curPageName;  
+    echo "</br>";  
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +16,6 @@ include 'connect.php';
   </head>
   <body>
     <div class="container">
-        <p>Live server address : </p>
         <button class="btn btn-success my-4">
             <a href="user.php" class="text-light"> Add new Book 
         </button>
